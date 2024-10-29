@@ -75,7 +75,7 @@
 
     <main class="l-main bd-container">
         <!-- all elements within this div, is generated in PDF -->
-        <div class="resume">
+        <div class="resume" id="area-cv">
 
             <div class="resume__left">
                 <!-- HOME  -->
@@ -110,10 +110,11 @@
                     <!-- theme change button -->
                     <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
 
+                    <!-- button to generate and download the pdf, Available for desktop -->
+                    <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
+
                 </section>
-
-                <!-- button to generate and download the pdf, Available for desktop -->
-
+                
                 <!-- Social  -->
                 <section class="social section">
                     <h2 class="section-title">
@@ -408,6 +409,10 @@
     <a href="#" class="scrolltop" id="scroll-top">
         <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
     </a>
+
+    <!-- HTML2PDF -->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+
     <!-- MAIN JS -->
     <script src="assets/js/main.js"></script>
 
